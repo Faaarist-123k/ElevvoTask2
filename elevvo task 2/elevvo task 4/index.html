@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechProduct - Simplify Your Workflow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class"
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md sticky top-0 bg-gradient-to-r from-violet-600 to-indigo-600 dark:from-slate-800 dark:to-slate-900 text-white z-50">
+    <h1 class="text-xl font-bold">TechProduct</h1>
+    <div class="flex gap-4">
+      <button onclick="toggleTheme()" class="px-3 py-2 rounded-lg border border-white/40 bg-white/20 hover:bg-white/30">
+        🌙/☀️
+      </button>
+      <a href="#pricing" class="px-4 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center px-6 py-20 bg-gradient-to-br from-violet-500 via-indigo-500 to-blue-600 text-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Revolutionize Your Workflow</h2>
+        <p class="max-w-lg mx-auto md:mx-0 text-lg mb-8">TechProduct is the ultimate SaaS tool designed to save you time, boost productivity, and streamline your business operations.</p>
+        <a href="#pricing" class="px-6 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-200">Start Free Trial</a>
+      </div>
+      <img src="https://picsum.photos/600/400?random=1" alt="Hero Image" class="rounded-xl shadow-2xl border-4 border-white/30">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="px-6 py-16 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">Features You’ll Love</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="p-6 bg-gradient-to-br from-indigo-50 to-violet-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-lg">
+        <img src="https://picsum.photos/400/250?random=2" alt="Fast Performance" class="mb-4 rounded-lg shadow-md">
+        <h4 class="text-xl font-semibold mb-2">Fast Performance</h4>
+        <p>Experience blazing-fast load times and seamless interaction.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-indigo-50 to-blue-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-lg">
+        <img src="https://picsum.photos/400/250?random=3" alt="Secure & Reliable" class="mb-4 rounded-lg shadow-md">
+        <h4 class="text-xl font-semibold mb-2">Secure & Reliable</h4>
+        <p>Your data is encrypted and stored with industry-leading security.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-violet-50 to-pink-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-lg">
+        <img src="https://picsum.photos/400/250?random=4" alt="Mobile Friendly" class="mb-4 rounded-lg shadow-md">
+        <h4 class="text-xl font-semibold mb-2">Mobile Friendly</h4>
+        <p>Access TechProduct anywhere, anytime on any device.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="px-6 py-16 bg-gradient-to-r from-indigo-50 to-violet-50 dark:from-slate-800 dark:to-slate-900">
+    <h3 class="text-3xl font-bold text-center mb-12">What Our Users Say</h3>
+    <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+      <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-gray-100 dark:border-slate-700">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah L" class="w-16 h-16 rounded-full border-2 border-indigo-500">
+          <h4 class="font-semibold">Sarah L<br><span class="text-sm text-gray-500 dark:text-gray-400">Startup Founder</span></h4>
+        </div>
+        <p>"TechProduct completely changed how we work. It’s fast, intuitive, and powerful."</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-gray-100 dark:border-slate-700">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark T" class="w-16 h-16 rounded-full border-2 border-indigo-500">
+          <h4 class="font-semibold">Mark T<br><span class="text-sm text-gray-500 dark:text-gray-400">Project Manager</span></h4>
+        </div>
+        <p>"The best SaaS tool I’ve ever used. Our team productivity doubled!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="px-6 py-16 max-w-6xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-12">Simple Pricing</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="p-8 bg-gradient-to-br from-indigo-50 to-violet-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-lg">
+        <img src="https://picsum.photos/400/250?random=5" alt="Basic Plan" class="mb-4 rounded-lg shadow-md">
+        <h4 class="text-xl font-semibold mb-4">Basic</h4>
+        <p class="text-3xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">$9<span class="text-base font-normal">/mo</span></p>
+        <ul class="mb-6 space-y-2">
+          <li>✔ Core Features</li>
+          <li>✔ Email Support</li>
+          <li>✖ Advanced Tools</li>
+        </ul>
+        <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Choose Plan</a>
+      </div>
+
+      <div class="p-8 bg-gradient-to-br from-violet-600 to-indigo-600 text-white rounded-2xl shadow-2xl scale-105">
+        <img src="https://picsum.photos/400/250?random=6" alt="Pro Plan" class="mb-4 rounded-lg shadow-md border-2 border-white/40">
+        <h4 class="text-xl font-semibold mb-4">Pro</h4>
+        <p class="text-3xl font-bold mb-4">$29<span class="text-base font-normal">/mo</span></p>
+        <ul class="mb-6 space-y-2">
+          <li>✔ All Basic Features</li>
+          <li>✔ Priority Support</li>
+          <li>✔ Advanced Tools</li>
+        </ul>
+        <a href="#" class="px-4 py-2 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-200">Choose Plan</a>
+      </div>
+
+      <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-lg">
+        <img src="https://picsum.photos/400/250?random=7" alt="Enterprise Plan" class="mb-4 rounded-lg shadow-md">
+        <h4 class="text-xl font-semibold mb-4">Enterprise</h4>
+        <p class="text-3xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">Custom</p>
+        <ul class="mb-6 space-y-2">
+          <li>✔ All Pro Features</li>
+          <li>✔ Dedicated Manager</li>
+          <li>✔ Custom Solutions</li>
+        </ul>
+        <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-6 py-20 text-center bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 text-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6">Ready to Get Started?</h3>
+      <p class="mb-8">Join thousands of teams already using TechProduct to accelerate their workflow.</p>
+      <a href="#" class="px-6 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-200">Start Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-6 py-8 text-center text-gray-600 dark:text-gray-400 bg-gradient-to-r from-indigo-50 to-violet-50 dark:from-slate-900 dark:to-slate-950">
+    © 2025 TechProduct. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Blog</h1>
+        <p>Sharing thoughts, travel, and tech insights</p>
+    </header>
+
+    <main class="container">
+        <!-- Filters -->
+        <div class="filters">
+            <div class="categories">
+                <button data-category="All" class="active">All</button>
+                <button data-category="Tech">Tech</button>
+                <button data-category="Travel">Travel</button>
+                <button data-category="Food">Food</button>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search posts...">
+        </div>
+
+        <!-- Blog Posts -->
+        <div id="postsContainer" class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="React Performance Tips">
+                <div class="card-content">
+                    <h3>React Performance Tips</h3>
+                    <small>2025-08-10 • Tech</small>
+                    <p>Learn how to optimize your React apps for speed and scalability.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Exploring the Alps">
+                <div class="card-content">
+                    <h3>Exploring the Alps</h3>
+                    <small>2025-08-08 • Travel</small>
+                    <p>A breathtaking journey through the majestic Alps.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Healthy Meals">
+                <div class="card-content">
+                    <h3>10-Minute Healthy Meals</h3>
+                    <small>2025-08-06 • Food</small>
+                    <p>Quick and delicious meals you can make in under 10 minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
